@@ -46,8 +46,8 @@
     </div>
     <div class="row">
         <div class="col-sm-8" id="description">
-            <p>During summer 2021, I joined the <a href="https://lips.cs.princeton.edu/" target="_blank">Laboratory for Intelligent Probabilistic Systems</a> under Dr. Ryan Adams to develop a system for visualizing generative models in 3D hyperbolic space. I designed a 3D model of hyperbolic space and its projection onto the Poincaré disk model in OpenGL, and connected the model with a GAN for generating correlated images based on geodesic distance.</p>
-            <p>What's cool about hyperbolic space is that unlike normal Euclidean space, hyperbolic space expands exponentially. This makes hyperbolic space much more interesting to explore and far less limited than Euclidean space. However, as a result of this property, it is impossible to properly represent every coordinate in a hyperbolic world with floating-point numbers. My model of hyperbolic space uses a <a href="https://en.wikipedia.org/wiki/Order-5_square_tiling" target="_blank">square tiling system</a> to get around this problem, so it only needs to deal with coordinates local to the user.</p>
+            <p>During summer 2021, I joined the <a href="https://lips.cs.princeton.edu/" target="_blank">Laboratory for Intelligent Probabilistic Systems</a> under Dr. Ryan Adams to develop a system for visualizing, exploring, and optimizing generative models in 3D hyperbolic space. I designed a 3D model of hyperbolic space and its projection onto the Poincaré disk model in OpenGL, and connected the model with a PGAN for generating correlated images based on geodesic distance.</p>
+            <p>Unlike normal Euclidean space, hyperbolic space expands exponentially, due to having negative curvature. This makes hyperbolic space much more interesting to explore and far less limited than Euclidean space. However, as a result of this property, it is impossible to properly represent every coordinate in a hyperbolic world with floating-point numbers. My model of hyperbolic space uses a <a href="https://en.wikipedia.org/wiki/Order-5_square_tiling" target="_blank">square tiling system</a> to get around this problem, so it only needs to deal with coordinates local to the user.</p>
             <p>The public GitHub repo for this project is available <a href="https://github.com/rl27/HyperViz" target="_blank">here</a>. Work on this project is currently ongoing.</p>
         </div>
 
@@ -55,6 +55,24 @@
             <img class="img-fluid" src="../assets/img/disk3.png" alt="Hyperbolic space">
             <hr>
             <img class="img-fluid" src="../assets/img/disk.png" alt="Hyperbolic space">
+        </div>
+    </div>
+
+    <hr>
+    <div class="col">
+        <h4>Pedestrian Detection and Interpretability</h4>
+    </div>
+    <div class="row">
+        <div class="col-sm-8" id="description">
+            <p>For my final project for COS429 (Computer Vision) at Princeton, I teamed up with Indu Panigrahi ('23) to investigate whether CNNs trained for object detections are reliant on visual cues when detecting pedestrians. We trained a Faster R-CNN on the Caltech Pedestrian Dataset, evaluated the model on different categories of pedestrian images, and improved the model by up-weighting images in poor-performing categories during training.</p>
+            <p>The code for this project is publically available <a href="https://github.com/ind1010/pedestrian_detection_interpretability" target="_blank">here</a>.</p>
+            <p>The project paper is available <a href="../assets/pdf/COS429_Report.pdf">here</a>, and the poster can be viewed <a href="../assets/img/429poster.png">here</a>.</p>
+        </div>
+        <br>
+
+        <div class="col">
+            <img class="img-fluid" src="../assets/img/caltech_pedestrian.png" alt="Pedestrians">
+            
         </div>
     </div>
 
@@ -84,7 +102,7 @@
     <div class="row">
         <div class="col-sm-8" id="description">
             <p>During a summer internship at Oregon State University I created a simple ray tracer using C++. I implemented and tested methods for improving image rendering speed and making rendered images more realistic.</p>
-            <p>The image shown to the right is an output from an early version of my program that used simple methods such as antialiasing and reflection.</p>
+            <p>The top image is an output from an early version of the ray tracer that used simple methods such as antialiasing and reflection.</p>
         </div>
 
         <div class="col">
@@ -97,8 +115,8 @@
     <div class="row">
         <div class="col-sm-8" id="description">
             <p>The bottom image is an output that used more advanced techniques, such as Monte Carlo path tracing, to create more realistic lighting.</p>
-            <p>The public GitHub repo for this project is available <a href="https://github.com/liura/ray-tracing" target="_blank">here</a>.
-            <p>For more information and more images, the poster for my final project, which I presented at the University of Portland, can be viewed <a href="../assets/pdf/rt_poster.pdf">here</a>.</p>
+            <p>The public GitHub repo for this project is available <a href="https://github.com/rl27/ray-tracing" target="_blank">here</a>.</p>
+            <p>For more information and more images, the poster for my final project, which I presented at the University of Portland, can be viewed <a href="../assets/pdf/rt_poster.pdf">here</a>. The presentation slides are available <a href="../assets/pdf/physically_based_rendering.pptx">here</a>.</p>
         </div>
 
         <div class="col">
@@ -131,7 +149,7 @@
         <div class="col-sm-8" id="description">
             <p>Over the course of 2016 and early 2017 I helped develop a project that used deep convolutional neural nets to analyze MRI scans and attempt to diagnose various stages of dementia. My motivation for this project comes from my family's history of Alzheimer's.</p>
             <p>By developing a technique that allowed the 3D MRI scans to each be split into hundreds of 2D "slices" as seen in the image, I was able to substantially improve the accuracy of the program.</p>
-            <p>The project was submitted to the 2017 Central Western Oregon Science Expo and the subsequent Intel Northwest Science Expo. The presentation poster can be seen <a href="../assets/pdf/isef_poster.pdf">here</a>.</p>
+            <p>The project was submitted to the 2017 Central Western Oregon Science Expo and the subsequent Intel Northwest Science Expo. The presentation poster can be viewed <a href="../assets/pdf/isef_poster.pdf">here</a>.</p>
         </div>
 			
         <div class="col">
@@ -171,11 +189,34 @@
     </div>
     <div class="row">
         <div class="col-sm-8" id="description">
-            <p>The latest version of TigerTools is currently being hosted at <a href="https://tools.tigerapps.org/" target="_blank">TigerApps</a> (requires a Princeton account to access).</p>
+            <p>The code for this project is publically available <a href="https://github.com/PrincetonUSG/TigerTools" target="_blank">here</a>.</p>
+            <p>The latest version of TigerTools is currently being hosted at <a href="https://www.tigerapps.org/#campus" target="_blank">TigerApps</a> (requires a Princeton account to access).</p>
         </div>
             
         <div class="col">
             <img class="img-fluid" src="../assets/img/tigertools2.png" alt="TigerTools interface">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm-8" id="description">
+            <p>Another website I've developed is named QTPod, which provides a web interface for users to listen to podcasts with advertisements automatically blocked. The advertisements are detected with speech recognition and removed.</p>
+        </div>
+            
+        <div class="col">
+            <img class="img-fluid" src="../assets/img/qtpod_popular.png" alt="QTPod popular page">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8" id="description">
+            <p>The website was developed using the Express framework for Node.js, and MongoDB for the database.</p>
+            <p>The code for this website is available <a href="https://github.com/QTPod/qtpod-site" target="_blank">here</a>.</p>
+        </div>
+            
+        <div class="col">
+            <img class="img-fluid" src="../assets/img/qtpod_single.png" alt="Podcast interface">
         </div>
     </div>
    
